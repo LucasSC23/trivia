@@ -38,7 +38,7 @@ def preguntas(nombre):
     pregunta2=input("De que color es el caballo negro del Mcal. Lopez?")
     pregunta3=input("De que color es el caballo rojo del Mcal. Lopez?")
     pregunta4=input("De que color es el caballo rosa del Mcal. Lopez?")
-    for i in respuestas:
+    for i in range(4):
         if pregunta1 == respuestas[i]:
             contador+=1
         elif pregunta2== respuestas[i]:
