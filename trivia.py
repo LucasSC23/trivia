@@ -34,7 +34,6 @@ contador=0
 
 def preguntas(nombre):
     print(f"Bienvenido {nombre}")
-
     pregunta1=input("De que color es el caballo blanco del Mcal. Lopez?")
     pregunta2=input("De que color es el caballo negro del Mcal. Lopez?")
     pregunta3=input("De que color es el caballo rojo del Mcal. Lopez?")
@@ -50,6 +49,13 @@ def preguntas(nombre):
             contador+=1    
         else:
             print("Fallo")
+
+    if contador ==4:
+        print("→ **Excelente**")
+    elif contador== 3 or contador== 2:
+        print("**Muy bien**")
+    else:
+        print("**Puedes mejorar**")
 
 
 preguntas(nombre_usuario)
